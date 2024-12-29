@@ -1,0 +1,45 @@
+{
+  "compilerOptions": {
+    // Basic Options
+    "target": "ES2022", // Specify ECMAScript target version
+    "module": "ESNext", // Use ES modules
+    "lib": ["ES2022", "DOM"], // Include standard libraries
+    "allowJs": true, // Allow JavaScript files to be compiled
+    "checkJs": true, // Enable type-checking for JavaScript files
+    "jsx": "react", // Enable JSX support
+    "declaration": true, // Generate .d.ts files
+    "declarationMap": true, // Generate source maps for .d.ts files
+    "sourceMap": true, // Generate source maps for debugging
+    "outDir": "./dist", // Output directory for compiled files
+    "rootDir": "./src", // Root directory for source files
+    "removeComments": true, // Remove comments from the output
+    "noEmitOnError": true, // Do not emit files if there are type errors
+
+    // Strict Type-Checking Options
+    "strict": true, // Enable all strict type-checking options
+    "noImplicitAny": true, // Raise errors for expressions with implied `any` type
+    "strictNullChecks": true, // Enable strict null checks
+    "strictFunctionTypes": true, // Enable strict checking of function types
+    "strictBindCallApply": true, // Enable strict checking of `bind`, `call`, and `apply`
+    "strictPropertyInitialization": true, // Ensure class properties are initialized
+    "noImplicitThis": true, // Raise errors for `this` with implied `any` type
+    "alwaysStrict": true, // Parse in strict mode and emit "use strict"
+
+    // Module Resolution Options
+    "moduleResolution": "NodeNext", // Use Node.js module resolution
+    "baseUrl": "./src", // Base directory for module resolution
+    "paths": {
+      "@components/*": ["components/*"], // Map paths for components
+      "@utils/*": ["utils/*"] // Map paths for utilities
+    },
+    "esModuleInterop": true, // Enable compatibility with ES modules
+    "resolveJsonModule": true, // Allow importing JSON files
+
+    // Advanced Options
+    "skipLibCheck": true, // Skip type-checking of declaration files
+    "forceConsistentCasingInFileNames": true, // Ensure consistent casing in file names
+    "allowSyntheticDefaultImports": true // Allow synthetic default imports
+  },
+  "include": ["src/**/*"], // Include all files in the src directory
+  "exclude": ["node_modules", "dist", "**/*.test.ts"] // Exclude specific files and directories
+  }
